@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theeratha Yatra </title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Theeratha Yatra </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-center text-white d-flex align-items-center justify-content-center hero-section">
+        <div class="container">
+            <h1>Explore the Beauty of India</h1>
+            <p class="lead">Discover diverse cultures, breathtaking landscapes, and vibrant cities.</p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Top Destinations in India</h2>
+            <div class="row">
+                <!-- Destination Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Shri Amarnath Cave Temple</h5>
+                            <p class="card-text">Amarnath Temple is a Hindu shrine located in the Pahalgam tehsil of the Anantnag district of Jammu and Kashmir, India.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.aljzohoE_EpjfeJ9W1BQQwHaDS&pid=Api&P=0&h=180" class="card-img-top" alt="Goa Beaches">
+                        <div class="card-body">
+                            <h5 class="card-title">Shri Mata Vaishno Devi</h5>
+                            <p class="card-text">The Vaishno Devi Temple is a major and divine Hindu temple dedicated to Vaishno Devi located in Katra, Reasi on the slopes of Trikuta Hills within the union territory of Jammu & Kashmir in India.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.O-ZJDof7VyKPBDg-9-KQ2wHaFj&pid=Api&P=0&h=180" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Jwalamukhi Temple, Kangra</h5>
+                            <p class="card-text">Jawalamukhi is a temple town and a nagar parishad in Kangra district of Himachal Pradesh, India. It is famous for the Jwalamukhi Devi Temple, a Shakti Peetha and a shrine to the goddess Durga</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.ZW0KGuCMGzxSPlEDD1SMOAHaE8&pid=Api&P=0&h=180" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalighat Mandir, Kolkata</h5>
+                            <p class="card-text">Regarded as one of the holiest of the 51 Shakti Peeths on Earth, the Kalighat Kali Temple is a must visit place in Kolkata due to its history and legend. The temple is dedicated to the Hindu Goddess.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.cGADeXEi6qoy9nG_H-kmqAHaE8&pid=Api&P=0&h=180" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Kamakshi Amman Temple, Chennai</h5>
+                            <p class="card-text">The Kamakshi Amman Temple, also known as Kamakoti Nayaki Kovil, [citation needed] is a Hindu temple dedicated to the goddess Kamaksh</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.YPuGktuteUsjJAQvH1ddAgHaEr&pid=Api&P=0&h=180" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Maa Taratarini Temple</h5>
+                            <p class="card-text">Tara Tarini Mandir is a Hindu temple of Adi Shakti at the Kumari hills on the bank of Rushikulya river [1] near Purushottampur in Ganjam district of Odisha, around 28km from Brahmapur city..</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 7 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Kanyakumari-Temple.jpg?fit=2121%2C1414&ssl=1" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">kanyakumari temple</h5>
+                            <p class="card-text">Kanyakumari is a city in Kanyakumari district in the state of Tamil Nadu, India. It is the southernmost tip of the Indian subcontinent and the southernmost city in mainland India, and thus referred to as "The Land's End.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 8 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.HTB60Iw3v6RTPCtlBwP8bAHaD4&pid=Api&P=0&h=180" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Ramanathaswamy Temple </h5>
+                            <p class="card-text">The Ramanathaswamy Temple is a Hindu temple dedicated to the Hindu god Shiva located on Rameswaram island in the state of Tamil Nadu, India. It is one of the twelve Jyotirlinga temples.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 9 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-01/22/full/1705896869-3978.jpg?im=FeatureCrop,size=(826,465)" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Ram Mandir</h5>
+                            <p class="card-text">The Ram Mandir is a partially constructed Hindu temple complex in Ayodhya, Uttar Pradesh, India. Many Hindus believe that it is located at the site of Ram Janmabhoomi, the mythical birthplace of Rama, a principal deity of Hinduism.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                                </div>
+                    </div>
+                </div>
+                <!-- Destination Card 10 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://image3.mouthshut.com/images/imagesp/925752496s.jpg" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">ISKCON Sri Radha Krishna Temple </h5>
+                                <p class="card-text">The Ramanathaswamy Temple is a Hindu temple dedicated to the Hindu god Shiva located on Rameswaram island in the state of Tamil Nadu, India. It is one of the twelve Jyotirlinga temples.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 11-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/prem-mandir-vrindavan_201908109091_20190821152533.jpg" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">RShri Banke Bihari temple </h5>
+                            <p class="card-text">Vrindavan, also spelt Vrindaban and Brindaban, is a historical city in the Mathura district of Uttar Pradesh, India.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 12-->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.nPqMAJY-7_NRfjPjc46bNwHaE8&pid=Api&P=0&h=180" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Shree Mahakaleshwar Temple</h5>
+                            <p class="card-text">Mahakaleshwar Jyotirlinga is a Hindu temple dedicated to Shiva and is one of the twelve Jyotirlingas, shrines which are said to be the most sacred abodes of Shiva.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Unique Experiences</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3>Adventure</h3>
+                    <p>From trekking in the Himalayas to scuba diving in the Andaman Islands.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Culture</h3>
+                    <p>Experience India’s rich cultural heritage through its festivals and traditions.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Nature</h3>
+                    <p>Witness the diverse landscapes from the deserts of Rajasthan to the lush forests of the Western Ghats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" >
+        <div class="container aboutme">
+
+            <img src="images/shasshhh.jpg" width="200" alt="Owner image">
+            <p>ॐ कृष्णाय वासुदेवाय हरये परमात्मने ।। प्रणतः क्लेशनाशाय गोविंदाय नमो नमः।।
+            </p>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 India Tourism. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script0.js"></script>
+</body>
+</html>

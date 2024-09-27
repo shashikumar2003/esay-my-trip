@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('https://wallpapercave.com/wp/wp6770293.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Button Styling */
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+}
+
+/* Card Customization */
+.card-title {
+    font-weight: bold;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+        padding-top: 50px;
+    }
+}
